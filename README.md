@@ -4,6 +4,7 @@
 Connect pocketchip by usb (osx)
 ```Shell Session
 ls /dev/tty.usb*
+# to list devices 
 sudo cu -l /dev/tty.usbmodemxxxxxx -s 115200
 ```
 
@@ -18,6 +19,7 @@ sudo nano /etc/apt/sources.list
 ```
 
 Process to upgrade from Jessie to Stretch
+If you encounter options to chose like /etc/securetty chose de N option "default configuration"
 ```Shell Session
 sudo apt-get upgrade 
 sudo apt-get dist-upgrade
@@ -31,7 +33,7 @@ sudo reboot
 
 If you need to add key
 ```Shell Session
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys xxxxxxxxxxxxxxxx
+sudo apt-key adv --keyserver keys.gnupg.net --recv-key xxxxxxxxxxxxxxxx
 ```
 
 edit xorg.config 
