@@ -1,4 +1,4 @@
-# Pocket-chip start
+# Pocket-chip start 
 
 ## Minimum config
 Connect pocketchip by usb (osx)
@@ -12,7 +12,11 @@ Config wifi
 ```Shell Session
 sudo nmtui
 ```
+
+---
+
 ## Update from Debian Jessie to Debian Stretch
+***Better to stay in jessie for the moment, more stable and omgmog launcher work***
 Remove the NTC Servers
 ```Shell Session
 sudo nano /etc/apt/sources.list
@@ -55,6 +59,8 @@ cd ~/.config/awesome
 rm rc.lua
 nano rc.lua
 ```
+
+---
 
 ### Locale config
 ```Shell Session
